@@ -6,6 +6,49 @@
   height: 40vmin;
   pointer-events: none;
 }
+.mycart{
+  position: relative;
+  overflow: hidden;
+  height: 20vh;
+  margin:0;
+  padding: 0!important;
+}
+.text-align-center{
+  margin-inline: auto;
+  display: flex;
+}
+
+p{
+  font-size: 10px;
+}
+.over{
+  position:absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left:0;  
+  text-align: left;
+  color: transparent
+}
+
+.over:hover{
+  position:absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left:0;  
+  text-align: left;
+  background-color: rgba(13, 13, 13, 0.5);
+  
+  color: white;
+}
+.myInnerCart{
+  width: 100%;
+  object-fit: cover;
+  margin: 0;
+  padding: 0;
+}
+
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
