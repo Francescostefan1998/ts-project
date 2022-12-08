@@ -4,6 +4,7 @@ import FetchComponent from "./FetchComponent";
 import { useNavigate, useParams } from 'react-router-dom'
 import { Information } from "../types"
 import { useState, useEffect } from "react"
+import { Container, Row } from "react-bootstrap"
 
 const DetailComponent = () => {
 const params = useParams()
@@ -33,10 +34,10 @@ useEffect(()=>{
             }
         }
         return(
-<div >
+<Container>
                {information && (
-                <div className="mycard text-align-center">
-                <img src={information.imageUrl} className="myInnerCart col-11 col-md-8" alt="image"/>
+                <Row className="mycard text-align-center col-12">
+                <div className="col-11 col-md-8"><img src={information.imageUrl} className="myInnerCart" alt="image"/></div>
                 <div className="col-11 col-md-4">
                   <h4>{information.newsSite}</h4>
                   <h6>{information.title}</h6>
@@ -44,10 +45,10 @@ useEffect(()=>{
                   <p></p>
               
                 
-                      </div></div>)
+                      </div></Row>)
                }
 
-               </div>
+               </Container>
                 
             
         )

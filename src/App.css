@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+
 }
 
 .App-logo {
@@ -17,7 +18,15 @@
   margin-inline: auto;
   display: flex;
 }
-
+.text-align-center p{
+font-size: 20px;
+}
+.text-align-center h4{
+  font-size: 30px;
+}
+.text-align-center h6{
+  font-size: 25px;
+}
 p{
   font-size: 10px;
 }
@@ -66,7 +75,10 @@ p{
   font-size: calc(10px + 2vmin);
   color: white;
 }
-
+a{
+  text-decoration: none;
+  color: white
+}
 .App-link {
   color: #61dafb;
 }
